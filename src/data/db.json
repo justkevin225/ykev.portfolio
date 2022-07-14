@@ -1,0 +1,38 @@
+{
+  "AccueilText": [
+    [
+      {
+        "id": 1,
+        "text": "Dev Web Frontend junior, et j'utilise..."
+      },
+      {
+        "id": 2,
+        "text": "<span class='text-primary'>Bootstrap <i class='fa-solid fa-headset'><i></span>"
+      },
+      {
+        "id": 3,
+        "text": "React"
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "text": "UI / UX Designer, "
+      },
+      {
+        "id": 2,
+        "text": "Figma"
+      },
+      {
+        "id": 3,
+        "text": "Adobe"
+      }
+    ]
+  ],
+  "AccueilImg": 
+    {
+      "id": 1,
+      "imgName": "just_me.png"
+    }
+  
+}

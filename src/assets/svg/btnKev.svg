@@ -1,0 +1,53 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 539.16 107.19">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-2,
+            .cls-3 {
+                fill: #606060;
+            }
+
+            .cls-1 {
+                opacity: 0.65;
+            }
+
+            .cls-2 {
+                opacity: 0.85;
+            }
+
+            .cls-4 {
+                fill: none;
+                stroke-miterlimit: 10;
+                stroke-width: 7px;
+                stroke: url(#Dégradé_sans_nom_51);
+            }
+        </style>
+        <linearGradient id="Dégradé_sans_nom_51" x1="3.85" y1="57.35" x2="543.02" y2="57.35"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" />
+            <stop offset="0.24" stop-color="#c3c3c3" />
+            <stop offset="0.52" />
+            <stop offset="0.82" stop-color="#c4c4c4" />
+            <stop offset="0.83" stop-color="#afafaf" />
+            <stop offset="0.87" stop-color="#717171" />
+            <stop offset="0.92" stop-color="#404040" />
+            <stop offset="0.95" stop-color="#1d1d1d" />
+            <stop offset="0.98" stop-color="#080808" />
+            <stop offset="1" />
+        </linearGradient>
+    </defs>
+    <title>btnKev</title>
+    <path class="cls-1"
+        d="M57,13.14,11.08,54a11.12,11.12,0,0,0-3.73,8.3v34a11.11,11.11,0,0,0,11.12,11.11H475.89a19.33,19.33,0,0,0,12.85-4.89L535.6,60.84a11.69,11.69,0,0,0,3.92-8.73V19a11.69,11.69,0,0,0-11.7-11.69H72.47A23.21,23.21,0,0,0,57,13.14Z"
+        transform="translate(-3.85 -3.76)" />
+    <path class="cls-2"
+        d="M57,13.14,11.08,54a11.12,11.12,0,0,0-3.73,8.3v34a11.11,11.11,0,0,0,11.12,11.11H475.89a19.33,19.33,0,0,0,12.85-4.89L535.6,60.84a11.69,11.69,0,0,0,3.92-8.73V19a11.69,11.69,0,0,0-11.7-11.69H72.47A23.21,23.21,0,0,0,57,13.14Z"
+        transform="translate(-3.85 -3.76)" />
+    <path class="cls-3"
+        d="M57,13.14,11.08,54a11.12,11.12,0,0,0-3.73,8.3v34a11.11,11.11,0,0,0,11.12,11.11H475.89a19.33,19.33,0,0,0,12.85-4.89L535.6,60.84a11.69,11.69,0,0,0,3.92-8.73V19a11.69,11.69,0,0,0-11.7-11.69H72.47A23.21,23.21,0,0,0,57,13.14Z"
+        transform="translate(-3.85 -3.76)" />
+    <path class="cls-4"
+        d="M57,13.14,11.08,54a11.12,11.12,0,0,0-3.73,8.3v34a11.11,11.11,0,0,0,11.12,11.11H475.89a19.33,19.33,0,0,0,12.85-4.89L535.6,60.84a11.69,11.69,0,0,0,3.92-8.73V19a11.69,11.69,0,0,0-11.7-11.69H72.47A23.21,23.21,0,0,0,57,13.14Z"
+        transform="translate(-3.85 -3.76)" />
+</svg>
