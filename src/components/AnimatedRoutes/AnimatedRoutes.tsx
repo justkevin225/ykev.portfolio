@@ -1,7 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Intro from "../../pages/Intro";
 import { AnimatePresence } from "framer-motion";
+import Intro from "../../pages/Intro";
+import Admin from "../../pages/Admin";
 import Loader from "../Loader/Loader";
 
 const Accueil = lazy(() => import("../../pages/Accueil"));
@@ -23,6 +24,7 @@ const AnimatedRoutes = () => {
           <Route path="/Accueil" element={<Accueil />} />
           <Route path="/Moi" element={<Moi />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Admin" element={<Admin />} />
           <Route path="/*" element={<Error />} />
         </Routes>
       </AnimatePresence>

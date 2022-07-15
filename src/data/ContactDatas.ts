@@ -27,7 +27,7 @@ const cardsDatas: CardModel[] = [
     topIcon: "fa-solid fa-phone",
     contactMean: "Telephone",
     contactRef: "+225 0565100029",
-    btnText: "Composer et lancer",
+    btnText: "Composer",
     // fa-solid fa-phone-arrow-up-right
     btnIcon: "fa-solid fa-square-phone",
     link: "tel:+2250565100029",
