@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import CardAccueil from "../cardAccueil/CardAccueil"
+import CardAccueil from "../CardAccueil/CardAccueil"
 import MySelf from '../../assets/img/just_me.png'
 
 const IntroBox = styled(motion.div)`
@@ -12,9 +12,7 @@ const IntroBox = styled(motion.div)`
   left: 50%;
   transform: translateX(-50%);
   color: ${(props) => props.theme.gray};
-  #Tilt{
-    box-shadow: none !important;
-  }
+
 `;
 
 const Me = styled(motion.img)`

@@ -63,7 +63,7 @@ const CardAccueil = () => {
     }
     typewriter.start();
   }
-  return (AccueilText ?
+  return (
     <div>
       <Tilt id="Tilt" style={{ position: "absolute", top: "30%", left: "0%" }}>
         <Text
@@ -90,10 +90,6 @@ const CardAccueil = () => {
         </Text>
 
       </Tilt>
-    </div>
-    :
-    <div className="spinner-border" role="status">
-      <span className="visually-hidden">Loading...</span>
     </div>
   );
 };

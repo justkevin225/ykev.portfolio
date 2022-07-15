@@ -25,6 +25,17 @@ body{
     font-family: "Maven Pro", sans-serif;
 }
 
+#Tilt{
+    box-shadow: none !important;
+}
+
+.fs-7{
+    font-size: small;
+}
+.fs-8{
+    font-size: smaller;
+}
+
 div.disclaimer{
     display: none;
 }
