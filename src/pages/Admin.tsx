@@ -3,11 +3,8 @@ import React, { useEffect } from "react";
 
 const Form = styled.form`
   position: relative;
-  /* left: 30px;
-  right: 30px; */
-  border: solid red 1px;
   width: 450px;
-  height: 60px;
+  height: 61px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,7 +18,7 @@ const Form = styled.form`
     z-index: 2;
     span {
       position: absolute;
-      top: 34.5px;
+      top: 34px;
       left: 16.5px;
       transition: all 0.2s ease-in-out;
       background-color: none;
@@ -29,6 +26,7 @@ const Form = styled.form`
       border-radius: 3.5px;
       margin: 0 3px;
       width: 100%;
+      cursor: text;
       label {
         cursor: text;
       }
@@ -66,38 +64,115 @@ const Admin = () => {
   useEffect(() => {
     const name: any = document.querySelector(".name");
     const nameInput: any = document.querySelector(".nameInput");
+    const nameInputField: any = document.querySelector(".nameInput input");
     const email: any = document.querySelector(".email");
     const emailInput: any = document.querySelector(".emailInput");
+    const emailInputField: any = document.querySelector(".emailInput input");
     const message: any = document.querySelector(".message");
     const messageInput: any = document.querySelector(".messageInput");
+    const formBtnNameToEmail: any = document.querySelector(
+      "#formBtnNameToEmail"
+    );
+    const formBtnEmailToMessage: any = document.querySelector(
+      "#formBtnEmailToMessage"
+    );
 
     name.addEventListener("click", () => {
       name.classList.add("movePlaceholder");
-      email.classList.remove("d-none");
-      email.classList.add("d-inline");
 
+      // afficher name input
       nameInput.classList.add("d-Klex");
       nameInput.classList.remove("d-none");
 
-      emailInput.classList.remove("d-Klex");
+      // retirer message input
       messageInput.classList.remove("d-Klex");
-
-      emailInput.classList.add("d-none");
       messageInput.classList.add("d-none");
+
+      // afficher message input
+      emailInput.classList.remove("d-Klex");
+      emailInput.classList.add("d-none");
+
+      // retirer label email
+      email.classList.add("d-none");
+      email.classList.remove("d-inline");
+
+      // ajouter btn name  to email
+      formBtnNameToEmail.classList.add("d-inline-block");
+      formBtnNameToEmail.classList.remove("d-none");
+
+      // retirer btn email  to message
+      formBtnEmailToMessage.classList.remove("d-inline-block");
+      formBtnEmailToMessage.classList.add("d-none");
+    });
+
+    formBtnEmailToMessage.addEventListener("click", () => {
+      if (emailInputField.value !== "") {
+        // afficher message input
+        messageInput.classList.add("d-Klex");
+        messageInput.classList.remove("d-none");
+
+        // retirer name input
+        nameInput.classList.remove("d-Klex");
+        nameInput.classList.add("d-none");
+
+        // retirer message input
+        emailInput.classList.remove("d-Klex");
+        emailInput.classList.add("d-none");
+
+        // On place la valeur de email dans le label
+        email.textContent = emailInputField.value;
+
+        // retirer btn email  to message
+        formBtnEmailToMessage.classList.remove("d-inline-block");
+        formBtnEmailToMessage.classList.add("d-none");
+
+        // Ajouter le bouton denvoi du form
+      }
+    });
+
+    formBtnNameToEmail.addEventListener("click", () => {
+      if (nameInputField.value !== "") {
+        // retirer label email
+        email.classList.remove("d-none");
+        email.classList.add("d-inline");
+
+        // retirer name input
+        nameInput.classList.remove("d-Klex");
+        nameInput.classList.add("d-none");
+
+        // retirer message input
+        messageInput.classList.remove("d-Klex");
+        messageInput.classList.add("d-none");
+
+        // afficher message input
+        emailInput.classList.add("d-Klex");
+        emailInput.classList.remove("d-none");
+
+        // On place la valeur de name dans le label
+        name.textContent = nameInputField.value;
+
+        // retirer btn name  to email
+        formBtnNameToEmail.classList.remove("d-inline-block");
+        formBtnNameToEmail.classList.add("d-none");
+
+        // ajouter btn email  to message
+        formBtnEmailToMessage.classList.add("d-inline-block");
+        formBtnEmailToMessage.classList.remove("d-none");
+      }
     });
 
     email.addEventListener("click", () => {
       email.classList.add("movePlaceholder");
-      message.classList.remove("d-none");
-      message.classList.add("d-inline");
-
+      // afficher message input
       emailInput.classList.add("d-Klex");
       emailInput.classList.remove("d-none");
 
+      // retirer name input
       nameInput.classList.remove("d-Klex");
-      messageInput.classList.remove("d-Klex");
-
       nameInput.classList.add("d-none");
+
+      // retirer message input
+      messageInput.classList.remove("d-Klex");
       messageInput.classList.add("d-none");
     });
 
@@ -121,13 +196,13 @@ const Admin = () => {
         <Form>
           <div className="placeholdersContainer">
             <span className="name">
-              <label htmlFor="name">Entrez votre nom...</label>
+              <label htmlFor="name">Qui êtes vous ?</label>
             </span>
             <span className="email d-none">
-              <label htmlFor="email">Entrez votre adresse...</label>
+              <label htmlFor="email">Entrez votre adresse svp...</label>
             </span>
             <span className="message d-none">
-              <label htmlFor="message">Votre message...</label>
+              <label htmlFor="message">Votre message :)</label>
             </span>
           </div>
           <InputContainer className="nameInput">
@@ -143,8 +218,16 @@ const Admin = () => {
             <textarea id="message" className="w-100"></textarea>
           </InputContainer>
         </Form>
+        <button className="btn btn-secondary my-3" id="formBtnNameToEmail">
+          Name to Email
+        </button>
+        <button
+          className="btn btn-secondary my-3 d-none"
+          id="formBtnEmailToMessage"
+        >
+          Email to Message
+        </button>
       </div>
-      <button>Suivant</button>
     </>
   );
 };
