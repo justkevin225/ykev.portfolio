@@ -2,7 +2,7 @@
     "name": "mon-portfolio-react",
     "version": "1.0.0",
     "description": "Version 1 de mon portfolio coder en react",
-    "homepage": "http://justkevin225.github.io/ykev.portfolio", 
+    "homepage": "https://justkevin225.github.io/ykev.portfolio", 
     "dependencies": {
         "@emotion/styled": "^11.9.3",
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
