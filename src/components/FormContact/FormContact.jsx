@@ -358,7 +358,7 @@ const FormContact = () => {
           messageInput.classList.add("d-none");
           formBtnNameToEmail.classList.remove("d-none");
           formBtnNameToEmail.classList.add("d-inline");
-          // sendEmail();
+          sendEmail();
           setOpen(true);
           setIsLoading(false);
         }, 5000);
