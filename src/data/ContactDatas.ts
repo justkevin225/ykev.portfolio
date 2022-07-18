@@ -17,20 +17,19 @@ const cardsDatas: CardModel[] = [
     contactMean: "Whatsapp",
     contactRef: "+225 0565100029",
     btnText: "Me joindre",
-    btnIcon: "fa-solid fa-comments",
+    btnIcon: "fa-duotone fa-comments-question-check",
     link: "https://api.whatsapp.com/send?phone=2250565100029&text=%5BBr%C3%A8ve+pr%C3%A9sentation+%2B+Objet+de+contact...%5D",
     delay: 0,
   },
   {
     id: 2,
-    // "fa-solid fa-phone-rotary"
-    topIcon: "fa-solid fa-phone",
-    contactMean: "Telephone",
-    contactRef: "+225 0565100029",
-    btnText: "Composer",
+    topIcon: "fa-duotone fa-mailbox",
+    contactMean: "E-mail",
+    contactRef: "kevinkouakou113@gmail.com",
+    btnText: "Me joindre",
     // fa-solid fa-phone-arrow-up-right
-    btnIcon: "fa-solid fa-square-phone",
-    link: "tel:+2250565100029",
+    btnIcon: "fa-duotone fa-comments-question-check",
+    link: "mailto:kevinkouakou113@gmail.com",
     delay: 0.25,
   },
   {
@@ -40,7 +39,7 @@ const cardsDatas: CardModel[] = [
     contactRef: "@JUST_KEVIN_225",
     btnText: "Me joindre",
     // fa-solid fa-phone-arrow-up-right
-    btnIcon: "fa-solid fa-comments",
+    btnIcon: "fa-duotone fa-comments-question-check",
     link: "https://t.me/JUST_KEVIN_225",
     delay: 0.5,
   },

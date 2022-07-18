@@ -2,6 +2,7 @@
     "name": "mon-portfolio-react",
     "version": "1.0.0",
     "description": "Version 1 de mon portfolio coder en react",
+    "homepage": "http://justkevin225.github.io/ykev.portfolio", 
     "dependencies": {
         "@emotion/styled": "^11.9.3",
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -9,6 +10,8 @@
         "@fortawesome/free-regular-svg-icons": "^6.1.1",
         "@fortawesome/free-solid-svg-icons": "^6.1.1",
         "@fortawesome/react-fontawesome": "^0.2.0",
+        "@mui/lab": "^5.0.0-alpha.90",
+        "@mui/material": "^5.9.0",
         "@types/node": "12.11.1",
         "@types/react": "16.9.9",
         "@types/react-dom": "16.9.2",
@@ -18,6 +21,7 @@
         "firebase": "^9.8.4",
         "font-awesome": "^4.7.0",
         "fontawesome": "^5.6.3",
+        "gh-pages": "^4.0.0",
         "json-server": "^0.17.0",
         "materialize-css": "^1.0.0-rc.2",
         "normalize.css": "^8.0.1",
@@ -43,7 +47,9 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "json:api": "json-server --watch src/data/db.json --port=3001 --delay=1500"
+        "json:api": "json-server --watch src/data/db.json --port=3001 --delay=1500",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -61,8 +67,10 @@
         ]
     },
     "devDependencies": {
+        "@emailjs/browser": "^3.6.2",
         "@material-ui/core": "^4.12.4",
         "@types/materialize-css": "^1.0.11",
+        "emailjs-com": "^3.2.0",
         "framer-motion": "^4.1.17",
         "react-tilted": "^1.0.0"
     }

@@ -24,7 +24,7 @@ const App: FunctionComponent = () => {
     <div id="App">
       <ThemeProvider theme={blackNWhite}>
         <GlobalStyle />
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           {checkForShowNav() && <LogoKevin />}
           <BottomNav>{checkForShowNav() && <MaNavBar />}</BottomNav>
           <AnimatedRoutes />

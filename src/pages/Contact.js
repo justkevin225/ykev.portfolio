@@ -7,6 +7,7 @@ import styled from "styled-components";
 import CardContact from "../components/CardContact/CardContact";
 import Card from "../helpers/cardStyle";
 import { cardsDatas } from "../data/ContactDatas";
+import FormContact from "../components/FormContact/FormContact";
 
 const Main = styled(motion.div)`
   width: 100vw;
@@ -46,7 +47,7 @@ const Contact = () => {
         }}
         className="exit"
       >
-        <Bubble width="85px" x="45%" y="60%" duration={randomInt(2, 6)} />
+        <Bubble width="85px" x="39%" y="60%" duration={randomInt(2, 6)} />
         <Bubble width="45px" x="25%" y="70%" duration={randomInt(2, 6)} />
         <Bubble width="105px" x="8%" y="30%" duration={randomInt(2, 6)} />
       </motion.div>
@@ -73,7 +74,7 @@ const Contact = () => {
         <Bubble width="70px" x="88%" y="35%" duration={randomInt(2, 6)} />
       </motion.div>
 
-      <div className="container pt-5">
+      <div className="container pt-4">
         <div className="row justify-content-center">
           <div className="col-10">
             <Card
@@ -87,17 +88,15 @@ const Contact = () => {
                 stiffness: 200,
                 bounce: 0.1,
               }}
-              className="p-3"
+              className="p-3 pb-4"
             >
               <h2 className="fw-bold">Contactez-moi</h2>
-              <div className="fs-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-                asperiores quaerat quibusdam quam quo, aspernatur dignissimos nobis
-                corporis.
+              <div className="fs-6 mb-2">
+                Si vous voulez entrer en contact avec moi, pour me parlez d’une collaboration,
+                d'une embauche, ou pour simplement me dire bonjour, remplissez le magnifique
+                formulaire ci-dessous ou joignez moi à l'aide d'une des méthodes plus bas.
               </div>
-              <form>
-                <textarea cols="30" rows="3"></textarea>
-              </form>
+              <FormContact />
             </Card>
           </div>
         </div>

@@ -65,7 +65,7 @@ const MaNavBar = () => {
     >
       <Indicator id="indicator" className="Accueil">
         <div>
-          <i className="fa-solid fa-house-chimney"></i>
+          <i className="fa-duotone fa-house-chimney"></i>
         </div>
       </Indicator>
       <nav id="nav">
@@ -77,7 +77,7 @@ const MaNavBar = () => {
             id="Skills"
           >
             <Link to="/Skills">
-              <i className="fa-solid fa-chess-knight"></i>
+              <i className="fa-duotone fa-chess-knight"></i>
               <span>Skills</span>
             </Link>
           </li>
@@ -89,7 +89,7 @@ const MaNavBar = () => {
             id="Portfolio"
           >
             <Link to="/Portfolio">
-              <i className="fa-solid fa-laptop-code"></i>
+              <i className="fa-duotone fa-laptop-code"></i>
               <span>Portfolio</span>
             </Link>
           </li>
@@ -102,7 +102,7 @@ const MaNavBar = () => {
             className="active"
           >
             <Link to="/Accueil">
-              <i className="fa-solid fa-house-chimney"></i>
+              <i className="fa-duotone fa-house-chimney"></i>
               <span>Accueil</span>
             </Link>
           </li>
@@ -114,7 +114,7 @@ const MaNavBar = () => {
             id="Moi"
           >
             <Link to="/Moi">
-              <i className="fa-solid fa-user-tie"></i>
+              <i className="fa-duotone fa-user-tie"></i>
               <span>Moi</span>
             </Link>
           </li>
@@ -126,7 +126,7 @@ const MaNavBar = () => {
             id="Contact"
           >
             <Link to="/Contact">
-              <i className="fa-solid fa-headset"></i>
+              <i className="fa-duotone fa-headset"></i>
               <span>Contact</span>
             </Link>
           </li>
