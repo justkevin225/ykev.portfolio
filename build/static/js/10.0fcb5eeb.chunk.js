@@ -1,2 +1,0 @@
-(this["webpackJsonpmon-portfolio-react"]=this["webpackJsonpmon-portfolio-react"]||[]).push([[10],{162:function(t,i,a){"use strict";a.r(i);var n=a(55),o=a(0),e=a.n(o),r=a(68);i.default=function(){return e.a.createElement(n.a.div,{variants:r.a,initial:"initial",animate:"animate",exit:"exit"},"Error")}},68:function(t,i,a){"use strict";i.a={initial:{opacity:0},animate:{opacity:1,transition:{duration:.3}},exit:{opcaity:0,transition:{duration:.3,delay:.3}}}}}]);
-//# sourceMappingURL=10.0fcb5eeb.chunk.js.map

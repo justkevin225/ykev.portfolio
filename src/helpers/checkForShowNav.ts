@@ -4,7 +4,8 @@ export const checkForShowNav = (): boolean => {
     path === "/Portfolio" ||
     path === "/Moi" ||
     path === "/Contact" ||
-    path === "/Skills"
+    path === "/Skills" ||
+    path === "/"
     ? true
     : false;
 };

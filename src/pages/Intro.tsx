@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Bienvenue from "../components/Bienvenue/Bienvenue";
 import MonLogoAnime from "../components/MonLogoAnime/MonLogoAnime";
+import nav from "../helpers/navigate";
 
 const Main = styled(motion.div)`
   position: relative;
@@ -24,8 +25,9 @@ const Welcome = styled.div`
 
 const Intro = () => {
   const navigate = useNavigate();
+  nav();
+
   setTimeout(() => {
-    window.location.pathname = "/Accueil";
     navigate("/Accueil");
   }, 4500);
   return (

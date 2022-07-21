@@ -46,7 +46,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "react-scripts build && cp build/index.html build/404.html",
+        "build": "react-scripts build",
         "json:api": "json-server --watch src/data/db.json --port=3001 --delay=1500",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"

@@ -8,7 +8,7 @@ const navigate = (): void => {
   const children: any = document.querySelectorAll("#nav li");
   let activeLi: any;
   children.forEach((Li: any) => {
-    if (Li.id === path) activeLi = Li;
+    if (Li.id === path || Li.classList[0] === "Intro") activeLi = Li;
     activeLi === Li
       ? activeLi.classList.add("active")
       : Li.classList.remove("active");

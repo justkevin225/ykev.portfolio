@@ -99,7 +99,7 @@ const MaNavBar = () => {
               setActiveOnClick(e);
             }}
             id="Accueil"
-            className="active"
+            className="Intro active"
           >
             <Link to="/Accueil">
               <i className="fa-duotone fa-house-chimney"></i>

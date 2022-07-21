@@ -10,6 +10,7 @@ import AnimatedRoutes from "./components/AnimatedRoutes/AnimatedRoutes";
 import LogoKevin from "./components/LogoKevin/LogoKevin";
 import blackNWhite from "./helpers/blackNwhite";
 import { ThemeProvider } from "styled-components";
+import nav from "./helpers/navigate";
 
 const BottomNav = styled.div`
   position: fixed;
